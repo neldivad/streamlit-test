@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from gsheetsdb import connect
 
+st.write(f'streamlit version = {st.__version__}')
 st.subheader("Testing Web App with Simulated data")
 
 df = pd.DataFrame({
