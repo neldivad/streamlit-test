@@ -4,7 +4,7 @@ from gsheetsdb import connect
 
 st.title("My First Streamlit Web App")
 
-df = pd.DataFrame({"one": [1, 2, 3], "two": [4, 5, 6], "three": [7, 8, 9]})
+df = pd.DataFrame({"one": [1, 2, 3], "two": [4, 5, 6], "three": [7, 8, 9]}, "four": [10, 11])
 st.write(df)
 
 st.title("Connect to Google Sheets")
