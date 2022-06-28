@@ -17,8 +17,8 @@ st.title("Connect to Google Sheets")
 
 gsheet_url = 'https://docs.google.com/spreadsheets/d/1VJjPLds4agbLijYEDup3nsYMcKK57w9YAp0qR5hYixo/edit#gid=613469656'
 #url = 'https://docs.google.com/spreadsheets/d/1jmRQJC4wQtSny-JTA3KLJ4BeVFdYU3qQanZerh_5IEU'
-st.markdown("""
-  Check original Google Sheet data at this [URL](https://docs.google.com/spreadsheets/d/1ixMrhGV1TPn14_oTyEIFjszuwuwO9xkbsc1WEBJH3N0/)
+st.markdown(f"""
+  Check original Google Sheet data at this [URL]({gsheet_url})
 """)
 conn = connect()
 rows = conn.execute(f'SELECT * FROM "{gsheet_url}"')
